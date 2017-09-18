@@ -12,4 +12,15 @@ public class Car {
         this.model=model;
     }
 
+    public String getModel() {
+        return this.model;
+    }
+
+    public int getWheels() {
+        return this.wheels;
+    }
+
+    public void setWheels(int wheels) {
+        this.wheels = wheels;
+    }
 }
