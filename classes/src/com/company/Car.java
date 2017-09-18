@@ -8,19 +8,19 @@ public class Car {
     private String engine;
     private String colour;
 
-    public void setModel(String model){
-        this.model=model;
+    public void setModel(String model) {
+        String validModel = model.toLowerCase();
+        if (validModel.equals("carrera") || validModel.equals("comodore")) {
+            this.model = model;
+        } else {
+            this.model = "Unknown";
+        }
+
     }
 
     public String getModel() {
         return this.model;
     }
 
-    public int getWheels() {
-        return this.wheels;
-    }
 
-    public void setWheels(int wheels) {
-        this.wheels = wheels;
-    }
 }
