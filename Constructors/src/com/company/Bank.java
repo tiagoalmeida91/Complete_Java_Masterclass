@@ -35,7 +35,7 @@ public class Bank {
     }
 
     public void withdrawal(double withdrawalammount) {
-        if (this.balence - withdrawalammount <= 0) {
+        if (this.balence - withdrawalammount < 0) {
             System.out.println("NO MONEY");
         } else {
             this.balence -= withdrawalammount;
