@@ -20,5 +20,14 @@ public class Main {
 
         Bank ta=new Bank("tim","tim@sdgfd.com",12345);
         System.out.println(ta.getCustomerName());
+
+        VipPerson vip1 =new VipPerson();
+        System.out.println(vip1.getName());
+
+        VipPerson vip2 =new VipPerson("bob",25000);
+        System.out.println(vip2.getName());
+
+        VipPerson vip3 = new VipPerson("tim",100,"tim@tim.com");
+        System.out.println(vip3.getName());
     }
 }
