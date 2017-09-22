@@ -9,7 +9,7 @@ public class Bank {
     private int phonenumber;
 
     public Bank() {
-        this(123,100,"default","ada@gds.com",968969506);
+        this(123, 100, "default", "ada@gds.com", 968969506);
     }
 
     public Bank(int accountNumber, float balence, String customerName,
@@ -21,6 +21,12 @@ public class Bank {
         this.email = email;
         this.phonenumber = phonenumber;
         System.out.println("constructor call");
+    }
+
+    public Bank(String customerName, String email, int phonenumber) {
+        this.customerName = customerName;
+        this.email = email;
+        this.phonenumber = phonenumber;
     }
 
     public void deposit(float ammount) {

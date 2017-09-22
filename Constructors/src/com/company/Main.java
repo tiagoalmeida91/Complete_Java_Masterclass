@@ -17,5 +17,8 @@ public class Main {
         bob.deposit(51);
         bob.withdrawal(100.0);
 
+
+        Bank ta=new Bank("tim","tim@sdgfd.com",12345);
+        System.out.println(ta.getCustomerName());
     }
 }
