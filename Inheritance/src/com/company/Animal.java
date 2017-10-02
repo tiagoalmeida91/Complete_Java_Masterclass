@@ -1,31 +1,31 @@
 package com.company;
 
 public class Animal {
-    private_int brain;
-    private_int body;
-    private_int size;
-    private_int weight;
+    private int brain;
+    private int body;
+    private int size;
+    private int weight;
 
-    public Animal(private_int brain, private_int body, private_int size, private_int weight) {
+    public Animal(private int brain, private int body, private int size, private int weight) {
         this.brain = brain;
         this.body = body;
         this.size = size;
         this.weight = weight;
     }
 
-    public private_int getBrain() {
+    public private int getBrain() {
         return brain;
     }
 
-    public private_int getBody() {
+    public private int getBody() {
         return body;
     }
 
-    public private_int getSize() {
+    public private int getSize() {
         return size;
     }
 
-    public private_int getWeight() {
+    public private int getWeight() {
         return weight;
     }
 }
