@@ -2,7 +2,7 @@ package com.company;
 
 public class Dog extends Animal{
 
-    public Dog(private int brain, private int body, private int size, private int weight) {
+    public Dog( int brain,  int body,  int size,  int weight) {
         super(brain, body, size, weight);
     }
 }
