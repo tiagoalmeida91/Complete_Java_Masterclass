@@ -8,7 +8,7 @@ public class Vehicle {
     private int currentVelocity;
     private int currentDirection;
 
-    public Vehicle(String name, String size) {
+    public Vehicle (String name, String size) {
         this.name = name;
         this.size = size;
 
@@ -24,7 +24,7 @@ public class Vehicle {
     public void move (int velocity, int direction){
         currentVelocity = velocity;
         currentDirection = direction;
-        System.out.println("Vehicle.move() : Moving at " + currentVelocity + currentDirection);
+        System.out.println("Vehicle.move() : Moving at " + currentVelocity + " in direction " + currentDirection);
     }
 
     public String getName() {
