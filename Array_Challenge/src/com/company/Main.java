@@ -17,8 +17,10 @@ public class Main {
 
     public static int [] getInt(int number){
         int[] array = new int[number];
-        System.out.println("Enter number :\r" );
+        int pos=1;
         for (int i=0; i<array.length;i++){
+            System.out.println("Enter number " + pos + ":" );
+            pos+=1;
             array[i]=scanner.nextInt();
         }
         return array;
