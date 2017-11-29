@@ -19,6 +19,16 @@ public class GroceryList {
         }
     }
 
+    public void modifyGroceryItem(String newitem){
+    int pos =findItem(newitem);
+    if (pos>=0){
+        for(int i = 0;i < groceryList.size();i++){
+            modifyGroceryItem(pos,newitem);
+        }
+    }
+
+    }
+
     public void modifyGroceryItem(int position, String newItem) {
         groceryList.set(position, newItem);
         System.out.println("Grocery item " + (position+1) + " has been modified.");
@@ -29,14 +39,7 @@ public class GroceryList {
         groceryList.remove(position);
     }
 
-    public String findItem(String searchItem) {
-//        boolean exists = groceryList.contains(searchItem);
-
+    public int findItem(String searchItem) {
         int position = groceryList.indexOf(searchItem);
-        if(position >=0) {
-            return groceryList.get(position);
-        }
-
-        return null;
     }
 }
