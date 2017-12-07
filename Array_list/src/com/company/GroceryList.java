@@ -41,5 +41,6 @@ public class GroceryList {
 
     public int findItem(String searchItem) {
         int position = groceryList.indexOf(searchItem);
+        return position;
     }
 }
